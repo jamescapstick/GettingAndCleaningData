@@ -72,3 +72,5 @@ combined_data$ActivityID <- NULL
 averages <- combined_data %>%
             group_by(Subject, Activity) %>%
             summarise_each(funs(mean))
+
+print(averages)
